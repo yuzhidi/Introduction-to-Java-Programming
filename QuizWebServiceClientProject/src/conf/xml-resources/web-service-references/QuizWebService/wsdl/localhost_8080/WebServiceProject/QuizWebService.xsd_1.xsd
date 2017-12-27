@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://chapter45/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://chapter45/">
+
+<xs:element name="generateQuiz" type="tns:generateQuiz" />
+
+<xs:element name="generateQuizResponse" type="tns:generateQuizResponse" />
+
+<xs:element name="getQuestions" type="tns:getQuestions" />
+
+<xs:element name="getQuestionsResponse" type="tns:getQuestionsResponse" />
+
+<xs:element name="gradeQuiz" type="tns:gradeQuiz" />
+
+<xs:element name="gradeQuizResponse" type="tns:gradeQuizResponse" />
+
+<xs:complexType name="generateQuiz">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="generateQuizResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getQuestions">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getQuestionsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gradeQuiz">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gradeQuizResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

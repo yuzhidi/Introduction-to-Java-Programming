@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WebServiceProject/ScoreWebService?WSDL" uri="xml-resources/web-service-references/ScoreWebService/wsdl/localhost_8080/WebServiceProject/ScoreWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WebServiceProject/ScoreWebService?xsd=1" uri="xml-resources/web-service-references/ScoreWebService/wsdl/localhost_8080/WebServiceProject/ScoreWebService.xsd_1.xsd"/>
+</catalog>

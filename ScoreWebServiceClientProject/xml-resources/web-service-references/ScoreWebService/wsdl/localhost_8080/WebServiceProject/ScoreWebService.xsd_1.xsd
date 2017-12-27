@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://chapter45/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://chapter45/">
+
+<xs:element name="findScore" type="tns:findScore" />
+
+<xs:element name="findScoreResponse" type="tns:findScoreResponse" />
+
+<xs:complexType name="findScore">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findScoreResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1 (branches/2.1-6728; 2011-02-03T14:14:58+0000) JAXWS-RI/2.2.3 JAXWS/2.2. --><xs:schema xmlns:tns="http://chapter45/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://chapter45/">
+
+<xs:element name="getAddress" type="tns:getAddress" />
+
+<xs:element name="getAddressResponse" type="tns:getAddressResponse" />
+
+<xs:element name="initializeJdbc" type="tns:initializeJdbc" />
+
+<xs:element name="initializeJdbcResponse" type="tns:initializeJdbcResponse" />
+
+<xs:element name="storeAddress" type="tns:storeAddress" />
+
+<xs:element name="storeAddressResponse" type="tns:storeAddressResponse" />
+
+<xs:complexType name="initializeJdbc">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="initializeJdbcResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="storeAddress">
+<xs:sequence>
+<xs:element name="arg0" type="tns:address" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="address">
+<xs:sequence>
+<xs:element name="city" type="xs:string" minOccurs="0" />
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="firstName" type="xs:string" minOccurs="0" />
+<xs:element name="lastName" type="xs:string" minOccurs="0" />
+<xs:element name="mi" type="xs:string" minOccurs="0" />
+<xs:element name="state" type="xs:string" minOccurs="0" />
+<xs:element name="street" type="xs:string" minOccurs="0" />
+<xs:element name="telephone" type="xs:string" minOccurs="0" />
+<xs:element name="zip" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="storeAddressResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAddress">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0" />
+<xs:element name="arg1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAddressResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:address" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
